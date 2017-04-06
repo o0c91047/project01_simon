@@ -12,7 +12,8 @@ var level = 13;
 var levelForWin = 13;
 var offset = 900;
 
-
+/*----I like how your colors are organized as global variables here. Looks super clean
+and would help immensely in restyling the game for keyboard input*/
 var greenLight = function() {
     greenButton.css("background-color", "limegreen");
     var greenOff = function() {
@@ -89,7 +90,7 @@ form.submit(function(event) {
 
 });
 
-
+//----jquery is on fleek ^-^
 var compare = function(e) {
     e.preventDefault();
     let choice = $(this).attr("id");
@@ -169,3 +170,6 @@ startButton.on("click", getNextColor);
 //maybe change layout
 
 //be able to choose using keyboard?
+/*----I'd argue that it's a last priority. For keyboard functionality I'd recommend styling the gui that would
+encourage a user to use a keyboard. I like the vertical layout and one way to take advantage of ease of use is
+making your logic mobile friendly.*/
